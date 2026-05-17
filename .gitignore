@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+.env.*
+*.local
+*.key
+*.pem
+*.crt
+*.p12
+id_rsa*
+.DS_Store
+coverage
