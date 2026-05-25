@@ -2,6 +2,7 @@ import { ArrowRight, Award, BookOpen, BriefcaseBusiness } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Badge, Card, Warning } from '../components/UI';
 import { certifications, courses } from '../data/curriculum';
+import { surface } from '../surface';
 
 export default function Home() {
   return (
@@ -9,9 +10,9 @@ export default function Home() {
       <section className="training-grid px-5 py-20 xl:px-10">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
-            <Badge tone="dark">pipeflowacademy.com</Badge>
+            <Badge tone="dark">{surface.domain}</Badge>
             <h1 className="mt-5 max-w-5xl text-5xl font-black tracking-normal md:text-7xl">
-              Training the Next Generation of Infrastructure Professionals.
+              {surface.headline}
             </h1>
             <p className="mt-6 max-w-3xl text-xl leading-9 text-stone-700">
               Practical training, certifications, apprenticeships, field labs, and AI-assisted learning for plumbing, electrical, HVAC, datacenter, and facilities careers.
@@ -22,9 +23,9 @@ export default function Home() {
               <Link className="rounded border border-stone-300 px-5 py-3 font-bold" to="/field-labs">Field labs</Link>
             </div>
             <div className="mt-6 rounded border border-teal-700/40 bg-white p-4 text-sm text-stone-700 shadow-sm">
-              <strong className="block text-ink">PipeFlow Academy UI smoke check</strong>
-              <span>App: PipeFlow Academy · Port: 3181 · Quick link: </span>
-              <Link className="font-bold text-academy" to="/skills-graph">Skills Graph</Link>
+              <strong className="block text-ink">{surface.name} UI smoke check</strong>
+              <span>App: {surface.name} · Port: {surface.port} · Quick link: </span>
+              <Link className="font-bold text-academy" to="/skills-map">Skills Map</Link>
             </div>
           </div>
           <Card>

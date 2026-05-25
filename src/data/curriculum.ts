@@ -41,15 +41,15 @@ const moduleSet = (domain: string, focus: string): Module[] => [
       { title: 'Failure modes', objective: 'Connect symptoms to common failure patterns.', safetyWarnings: ['Protect people and property before testing.'] },
       { title: 'Tools and measurements', objective: 'Use basic measurement tools to support diagnosis.', safetyWarnings: ['Verify tool condition and rating.'] },
     ],
-    practicalChecklist: ['Identify components', 'Map symptoms', 'Take a measurement', 'Explain failure risk'],
-    quiz: ['What component failed?', 'Which tool verifies the symptom?', 'What risk must be controlled first?'],
+    practicalChecklist: ['Identify components', 'Map symptoms', 'Take a measurement', 'Explain failure safety concern'],
+    quiz: ['What component failed?', 'Which tool verifies the symptom?', 'What safety concern must be controlled first?'],
   },
   {
     title: `${domain} diagnostics workflow`,
     lessons: [
       { title: 'Intake and evidence', objective: 'Gather history, photos, readings, and constraints.', safetyWarnings: ['Avoid tests that can worsen damage.'] },
-      { title: 'Step-by-step diagnosis', objective: 'Use least-invasive tests before repair recommendations.', safetyWarnings: ['Stop for electrical, pressure, contamination, or uptime risks.'] },
-      { title: 'Repair flow planning', objective: 'Build a repair flow with tools, parts, risks, and final tests.', safetyWarnings: ['Confirm authorization before work.'] },
+      { title: 'Step-by-step diagnosis', objective: 'Use least-invasive tests before repair guidance.', safetyWarnings: ['Stop for electrical, pressure, contamination, or uptime safety concerns.'] },
+      { title: 'Repair flow planning', objective: 'Build a repair flow with tools, parts, safety concerns, and final tests.', safetyWarnings: ['Confirm authorization before work.'] },
     ],
     practicalChecklist: ['Gather evidence', 'Run controlled test', 'Build repair flow', 'Perform final verification'],
     quiz: ['Why test one variable at a time?', 'What makes evidence useful?', 'What belongs in a repair flow?'],
@@ -58,7 +58,7 @@ const moduleSet = (domain: string, focus: string): Module[] => [
     title: `${domain} certification signoff`,
     lessons: [
       { title: 'Practical assessment', objective: 'Prepare for hands-on checkoff and instructor review.', safetyWarnings: ['Training checkoffs do not replace licensing.'] },
-      { title: 'Customer and team communication', objective: 'Explain findings, risks, options, and next steps clearly.', safetyWarnings: ['Do not overstate certainty or credentials.'] },
+      { title: 'Customer and team communication', objective: 'Explain findings, safety concerns, options, and next steps clearly.', safetyWarnings: ['Do not overstate certainty or credentials.'] },
       { title: 'Final testing and closeout', objective: 'Verify work, clean the area, and complete documentation.', safetyWarnings: ['Do not leave unsafe systems operating.'] },
     ],
     practicalChecklist: ['Complete hands-on checkoff', 'Pass quiz', 'Explain findings', 'Submit final documentation'],

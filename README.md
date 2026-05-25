@@ -2,7 +2,7 @@
 
 Domain: `pipeflowacademy.com`
 
-Positioning: **Public education demo for infrastructure training paths, certifications, skill graph concepts, and learning content.**
+Positioning: **Public education demo for infrastructure training paths, certifications, readiness concepts, and learning content.**
 
 PipeFlow Academy is a public demo surface for practical skilled-trade and infrastructure learning across plumbing, electrical, HVAC/cooling, facilities, apprenticeships, field labs, and business operations.
 
@@ -12,9 +12,9 @@ PipeFlow Academy is a public demo surface for practical skilled-trade and infras
 - Tailwind CSS
 - Static public frontend
 - Training path and certification examples
-- Skill graph and workflow lab concepts
+- Skills map and workflow lab concepts
 - Synthetic content only
-- No backend, learner database, payment system, private datasets, admin tooling, or private scoring internals
+- No backend, learner database, payment system, user records, management tooling, or live operations data
 
 ## Routes
 
@@ -22,7 +22,7 @@ PipeFlow Academy is a public demo surface for practical skilled-trade and infras
 - `/learn`
 - `/certifications`
 - `/skills`
-- `/skills-graph`
+- `/skills-map`
 - `/certification-progress`
 - `/field-readiness`
 - `/training-gaps`
@@ -50,7 +50,7 @@ npm run build
 
 ## Public Safety Note
 
-Public demo surface. Proprietary ontology, scoring, orchestration, and private operational datasets are not exposed.
+Public demo surface with sanitized examples only.
 
 ## Credential Disclaimer
 
@@ -58,4 +58,4 @@ Certificates are training credentials unless aligned with local licensing, appre
 
 ## Content Policy
 
-This repo should contain public training categories, mock examples, sanitized skill graph concepts, and learning demo pages only. Do not add secrets, private schemas, internal route maps, prompt content, scoring formulas, real learner data, admin panels, or deployment credentials.
+This repo should contain public training categories, mock examples, sanitized skills map concepts, and learning demo pages only. Do not add secrets, credentials, prompt content, real learner data, management panels, or deployment credentials.

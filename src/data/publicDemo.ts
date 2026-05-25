@@ -1,4 +1,4 @@
-export const skillGraphExamples = [
+export const skillMapExamples = [
   {
     title: 'Plumbing foundations',
     label: 'Training path',
@@ -35,7 +35,7 @@ export const certificationExamples = [
 export const readinessExamples = [
   ['Starter', 'Learner understands basic safety language and tool categories.'],
   ['Practice', 'Learner completes supervised labs and synthetic job documentation.'],
-  ['Field-ready concept', 'Learner can explain dispatch handoff, risk escalation, and follow-up steps.'],
+  ['Field-ready concept', 'Learner can explain dispatch handoff, safety concern escalation, and follow-up steps.'],
 ];
 
 export const careerPathExamples = [

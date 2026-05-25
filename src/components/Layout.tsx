@@ -1,27 +1,6 @@
 import { GraduationCap, ShieldCheck } from 'lucide-react';
 import { NavLink, Outlet } from 'react-router-dom';
-
-const navItems = [
-  ['/', 'Home'],
-  ['/learn', 'Learn'],
-  ['/certifications', 'Certifications'],
-  ['/certification-progress', 'Progress'],
-  ['/skills', 'Skills'],
-  ['/skills-graph', 'Skills Graph'],
-  ['/field-readiness', 'Readiness'],
-  ['/training-gaps', 'Gaps'],
-  ['/workflow-labs', 'Workflow Labs'],
-  ['/career-paths', 'Career Paths'],
-  ['/apprenticeships', 'Apprenticeships'],
-  ['/electrical', 'Electrical'],
-  ['/plumbing', 'Plumbing'],
-  ['/hvac', 'HVAC'],
-  ['/datacenter', 'Datacenter'],
-  ['/field-labs', 'Field Labs'],
-  ['/ai-tools', 'AI Tools'],
-  ['/instructors', 'Instructors'],
-  ['/business', 'Business'],
-];
+import { surface } from '../surface';
 
 export default function Layout() {
   return (
@@ -31,15 +10,15 @@ export default function Layout() {
           <a href="/" className="flex items-center gap-3">
             <span className="grid size-11 place-items-center rounded bg-academy text-white"><GraduationCap size={24} /></span>
             <span>
-              <strong className="block text-lg">PipeFlow Academy</strong>
-              <small className="text-stone-600">Training the Next Generation of Infrastructure Professionals</small>
+              <strong className="block text-lg">{surface.name}</strong>
+              <small className="text-stone-600">{surface.tagline}</small>
             </span>
           </a>
           <nav className="flex gap-2 overflow-x-auto pb-1 text-sm" aria-label="Primary navigation">
-            {navItems.map(([to, label]) => (
+            {surface.navItems.map(({ path, label }) => (
               <NavLink
-                key={to}
-                to={to}
+                key={path}
+                to={path}
                 className={({ isActive }) =>
                   `whitespace-nowrap rounded px-3 py-2 ${isActive ? 'bg-academy text-white' : 'text-stone-700 hover:bg-stone-200'}`
                 }
@@ -53,8 +32,13 @@ export default function Layout() {
       <main><Outlet /></main>
       <footer className="border-t border-stone-200 px-5 py-8 xl:px-10">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 text-stone-600 md:flex-row md:items-center md:justify-between">
-          <p>pipeflowacademy.com · public education demo for training paths, certifications, and skill graph concepts.</p>
-          <span className="flex items-center gap-2"><ShieldCheck size={18} /> Public demo surface. Proprietary ontology, scoring, orchestration, and private operational datasets are not exposed.</span>
+          <p>{surface.domain} · {surface.footerDescription}</p>
+          <div className="flex flex-col gap-2 md:items-end">
+            <span className="flex items-center gap-2"><ShieldCheck size={18} /> {surface.safetyNote}</span>
+            <a className="font-bold text-academy" href={surface.siblingSurface.localUrl}>
+              Open {surface.siblingSurface.label} surface
+            </a>
+          </div>
         </div>
       </footer>
     </div>

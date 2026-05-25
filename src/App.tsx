@@ -16,7 +16,7 @@ import Instructors from './pages/Instructors';
 import Learn from './pages/Learn';
 import Plumbing from './pages/Plumbing';
 import Skills from './pages/Skills';
-import SkillsGraph from './pages/SkillsGraph';
+import SkillsMap from './pages/SkillsMap';
 import TrainingGaps from './pages/TrainingGaps';
 import WorkflowLabs from './pages/WorkflowLabs';
 
@@ -28,7 +28,7 @@ export default function App() {
         <Route path="/learn" element={<Learn />} />
         <Route path="/certifications" element={<Certifications />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/skills-graph" element={<SkillsGraph />} />
+        <Route path="/skills-map" element={<SkillsMap />} />
         <Route path="/certification-progress" element={<CertificationProgress />} />
         <Route path="/field-readiness" element={<FieldReadiness />} />
         <Route path="/training-gaps" element={<TrainingGaps />} />
