@@ -5,7 +5,13 @@ const navItems = [
   ['/', 'Home'],
   ['/learn', 'Learn'],
   ['/certifications', 'Certifications'],
+  ['/certification-progress', 'Progress'],
   ['/skills', 'Skills'],
+  ['/skills-graph', 'Skills Graph'],
+  ['/field-readiness', 'Readiness'],
+  ['/training-gaps', 'Gaps'],
+  ['/workflow-labs', 'Workflow Labs'],
+  ['/career-paths', 'Career Paths'],
   ['/apprenticeships', 'Apprenticeships'],
   ['/electrical', 'Electrical'],
   ['/plumbing', 'Plumbing'],
@@ -15,7 +21,6 @@ const navItems = [
   ['/ai-tools', 'AI Tools'],
   ['/instructors', 'Instructors'],
   ['/business', 'Business'],
-  ['/admin', 'Admin'],
 ];
 
 export default function Layout() {
@@ -48,8 +53,8 @@ export default function Layout() {
       <main><Outlet /></main>
       <footer className="border-t border-stone-200 px-5 py-8 xl:px-10">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 text-stone-600 md:flex-row md:items-center md:justify-between">
-          <p>pipeflowacademy.com · practical training, certifications, apprenticeships, and infrastructure career pathways.</p>
-          <span className="flex items-center gap-2"><ShieldCheck size={18} /> Training credentials require local licensing alignment.</span>
+          <p>pipeflowacademy.com · public education demo for training paths, certifications, and skill graph concepts.</p>
+          <span className="flex items-center gap-2"><ShieldCheck size={18} /> Public demo surface. Proprietary ontology, scoring, orchestration, and private operational datasets are not exposed.</span>
         </div>
       </footer>
     </div>

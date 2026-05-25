@@ -21,6 +21,11 @@ export default function Home() {
               <Link className="rounded border border-stone-300 px-5 py-3 font-bold" to="/certifications">View certifications</Link>
               <Link className="rounded border border-stone-300 px-5 py-3 font-bold" to="/field-labs">Field labs</Link>
             </div>
+            <div className="mt-6 rounded border border-teal-700/40 bg-white p-4 text-sm text-stone-700 shadow-sm">
+              <strong className="block text-ink">PipeFlow Academy UI smoke check</strong>
+              <span>App: PipeFlow Academy · Port: 3181 · Quick link: </span>
+              <Link className="font-bold text-academy" to="/skills-graph">Skills Graph</Link>
+            </div>
           </div>
           <Card>
             <div className="grid gap-4">

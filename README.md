@@ -2,17 +2,19 @@
 
 Domain: `pipeflowacademy.com`
 
-Positioning: **Training the Next Generation of Infrastructure Professionals.**
+Positioning: **Public education demo for infrastructure training paths, certifications, skill graph concepts, and learning content.**
 
-PipeFlow Academy is the training brand for practical skilled-trade and infrastructure careers across plumbing, electrical, HVAC/cooling, datacenter infrastructure, facilities maintenance, apprenticeships, field labs, and AI-assisted learning.
+PipeFlow Academy is a public demo surface for practical skilled-trade and infrastructure learning across plumbing, electrical, HVAC/cooling, facilities, apprenticeships, field labs, and business operations.
 
-## Architecture
+## Public Demo Scope
 
 - React + TypeScript + Vite
 - Tailwind CSS
-- Local curriculum seed data
-- Static frontend MVP
-- No backend, learner database, payment system, NAS connection, paid API, or public exposure
+- Static public frontend
+- Training path and certification examples
+- Skill graph and workflow lab concepts
+- Synthetic content only
+- No backend, learner database, payment system, private datasets, admin tooling, or private scoring internals
 
 ## Routes
 
@@ -20,6 +22,12 @@ PipeFlow Academy is the training brand for practical skilled-trade and infrastru
 - `/learn`
 - `/certifications`
 - `/skills`
+- `/skills-graph`
+- `/certification-progress`
+- `/field-readiness`
+- `/training-gaps`
+- `/career-paths`
+- `/workflow-labs`
 - `/apprenticeships`
 - `/electrical`
 - `/plumbing`
@@ -29,66 +37,10 @@ PipeFlow Academy is the training brand for practical skilled-trade and infrastru
 - `/ai-tools`
 - `/instructors`
 - `/business`
-- `/admin`
 
-## Curriculum Structure
+## Standalone Setup
 
-Seed curriculum lives in `src/data/curriculum.ts`.
-
-Each course includes:
-
-- modules
-- lessons
-- practical checklists
-- quizzes
-- skill mapping
-- certification mapping
-- safety warnings
-- required tools
-
-Full sample programs:
-
-- Plumbing Foundations
-- Residential Plumbing
-- Drain Cleaning
-- Electrical Foundations
-- Commercial Electrical
-- HVAC Cooling Systems
-- Datacenter Cooling Basics
-- Facilities Maintenance Fundamentals
-
-## Datacenter Specialization
-
-The `AI Infrastructure Systems` learning track covers:
-
-- cooling systems
-- thermal management
-- chilled water systems
-- pumps
-- redundancy
-- uptime
-- emergency response
-- facilities operations
-- electrical distribution
-- maintenance workflows
-
-## Edge AI Roadmap
-
-Future Academy AI tools may include manual summarization, quiz generation, equipment-photo identification, procedure retrieval, skill-gap recommendations, safety prompts, and diagnostic practice flows. Keep AI local-first where possible and avoid uploading sensitive customer, facility, or infrastructure data into unapproved systems.
-
-## Robotics Roadmap
-
-Academy curriculum can later support robotics-assisted field work training:
-
-- AI copilots
-- computer vision inspection
-- AR-assisted workflows
-- inspection robots
-- semi-autonomous infrastructure assistants
-
-## Deployment
-
-Local first:
+From this folder:
 
 ```bash
 npm install
@@ -96,23 +48,14 @@ npm run dev
 npm run build
 ```
 
-Security warnings:
+## Public Safety Note
 
-- Never expose Synology admin UI publicly.
-- Do not expose the NAS directly.
-- Use HTTPS.
-- Use MFA.
-- Use a reverse proxy.
-- Use firewall rules.
-- Keep DSM and dependencies updated.
-- Use backups and test restore.
-- Put secrets in `.env`, never in git.
-- Consider Cloudflare Tunnel, Tailscale, or VPN before direct public hosting.
+Public demo surface. Proprietary ontology, scoring, orchestration, and private operational datasets are not exposed.
 
 ## Credential Disclaimer
 
-Certificates are training credentials unless/until aligned with local licensing, apprenticeship, state, county, or municipal trade requirements.
+Certificates are training credentials unless aligned with local licensing, apprenticeship, state, county, or municipal trade requirements.
 
-## Future Enterprise Direction
+## Content Policy
 
-PipeFlow Academy can feed PipeFlow Systems by producing verified workforce skill data, practical checkoffs, employer onboarding records, course completion history, certification readiness, and career pathway analytics.
+This repo should contain public training categories, mock examples, sanitized skill graph concepts, and learning demo pages only. Do not add secrets, private schemas, internal route maps, prompt content, scoring formulas, real learner data, admin panels, or deployment credentials.
